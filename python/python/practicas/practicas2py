@@ -1,0 +1,26 @@
+#el usuario tiene que introducir un numero minimo,una potencia y un numero maximo y tiene que aparecer en patalla en numero inicial y los numeros seguiente que esten elevados a esta potencia
+def getNumberFromUser(userMessage):
+    return int(input(userMessage))
+
+def getNumbersFromUser():
+    firstNumber = getNumberFromUser("Put the first number that is greater than one: ")
+    secondNumber = getNumberFromUser("Put the second number greater than the first: ")
+    powerNumber = getNumberFromUser("Enter the power that will raise the number: ")
+    if firstNumber > secondNumber:
+        print("The first number is higher then second.")
+    return firstNumber, secondNumber, powerNumber
+
+def printNumber(firstNumber):
+    print(f"{firstNumber}")
+
+def power(firstNumber):
+    return firstNumber ** powerNumber
+
+firstNumber, secondNumber, powerNumber = getNumbersFromUser()
+print(firstNumber)
+while firstNumber < secondNumber:
+   firstNumber = power(firstNumber)
+   printNumber(firstNumber)
+
+
+   

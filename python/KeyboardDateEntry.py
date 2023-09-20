@@ -1,0 +1,8 @@
+introduce = input("Put a word: ")
+numberInt = int(input("Put a number: "))
+numberFloat = float(input("Put a float number: "))
+numberComplex = complex(input("Put a complex number: "))
+print("string:" + introduce)
+print("entire:" +  numberInt)
+print("float:" + numberFloat)
+print("compex:" + numberComplex)
